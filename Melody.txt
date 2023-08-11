@@ -1,0 +1,6 @@
+#! /bin/bash
+#Exercise to be push to GitHub
+# Author: Enow Nerise
+echo "This is a Reporsetory to be committed and push to GitHub"
+echo "This is just a  single line of code"
+Group 4 is Greate
