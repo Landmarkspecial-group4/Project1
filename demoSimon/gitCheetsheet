@@ -1,0 +1,102 @@
+===============================
+GIT CHEATSHEET FOR EVERYONE
+===============================
+========================
+COMMON GIT COMMANDS
+========================
+
+1)git init
+creates an empty repository in our local machine.
+
+2)git add [file] 
+use to stage a file.
+
+3)git reset[file] 
+It unstages a file and sends back to working directory.
+
+4)git diff 
+Diff of what is staged but not yet commited.
+
+5)git commit -m "Descriptive message"
+commit your new staged content and saves it as a snapshot.
+
+=====================================================================
+BRANCH & MERGE
+Isolating work in branches, changing context, and integrating changes
+======================================================================
+1) git branch
+list your branches. a * will appear next to the currently active branch
+
+>>git branch [branch-name]
+create a new branch at the current commit
+
+2) git checkout
+switch to another branch and check it out into your working directory
+
+3) git merge [branch]
+merge the specified branch’s history into the current one
+
+4) git log
+show all commits in the current branch’s history
+
+===============================================================
+SETUP
+Configuring user information used across all local repositories
+===============================================================
+1) git config --global user.name “[firstname lastname]”
+set a name that is identifiable for credit when review version history
+
+2) git config --global user.email “[valid-email]”
+set an email address that will be associated with each history marker
+
+3) git config --global color.ui auto
+set automatic command line coloring for Git for easy reviewing
+
+===================================================================
+SETUP & INIT
+Configuring user information, initializing and cloning repositories
+===================================================================
+1) git init
+initialize an existing directory as a Git repository
+
+2) git clone [url]
+retrieve an entire repository from a hosted location via URL
+
+===============================================
+INSPECT & COMPARE
+Examining logs, diffs and object information
+===============================================
+1) git log
+show the commit history for the currently active branch
+
+2) git log branchB..branchA
+show the commits on branchA that are not on branch
+
+3) git log --follow [file]
+show the commits that changed file, even across renames
+
+4) git diff branchB...branchA
+show the diff of what is in branchA that is not in branch
+
+5)git show [SHA]
+show any object in Git in human-readable format
+
+====================================================================
+SHARE & UPDATE
+Retrieving updates from another repository and updating local repos
+====================================================================
+
+1) git remote add [alias] [url]
+add a git URL as an alias 
+
+2) git fetch [alias]
+fetch down all the branches from that Git remote  
+
+3) git merge [alias]/[branch]
+merge a remote branch into your current branch to bring it up to date
+
+4) git push [alias] [branch]
+Transmit local branch commits to the remote repository branch 
+
+5) git pull
+fetch and merge any commits from the tracking remote branch
